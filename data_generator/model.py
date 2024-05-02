@@ -3,8 +3,6 @@ import google.generativeai as genai
 from pandas import read_json
 import os
 
-# load environment variables
-variables = load_dotenv()
 # load model configuration
 model_config = read_json('./model_config.json')
 
@@ -65,4 +63,4 @@ class Model:
             # validated data
             return response.text
         except:
-            print('Error occured while validating data!')    
+            print('Error occured while validating data!')   
